@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Management System</title>
+</head>
+<body>
+    <ul>
+        {% for project in project_list %}
+        <li><a href="{{ project.pk }}">{{ project.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
